@@ -1,0 +1,144 @@
+body {
+  background-color: #000000;
+  color: #ffffff;
+  font-family: 'Courier New', Courier, monospace;
+  position: absolute;
+  overflow: auto;
+}
+
+body main {
+  padding-top: 2%;
+  padding-left: 2%;
+  padding-right: 2%;
+  padding-bottom: 2%;
+}
+
+
+aside {
+  background-color: #000000;
+  color: #ffffff;
+  position: absolute;
+  right: 0;
+  top: 10%;
+  height: 100%;
+  padding-right: 2%;
+}
+
+aside h3 {
+  color: #ffffff;
+  /* white */
+  text-align: left;
+  padding-left: 5%;
+}
+
+
+aside a:link {
+  color: #ffffff;
+  /* white */
+  text-align: left;
+}
+
+aside a:visited {
+  color: #ffffff;
+  /* white */
+  text-align: left;
+}
+
+article {
+  background-color: #000000;
+  color: #ffffff;
+  left: 0;
+  z-index: 1;
+  justify-text: center;
+  text-align: left;
+  padding-top: 2%;
+}
+
+article h1 {
+  color: #ffffff;
+  /* white */
+  z-index: 2;
+}
+
+article a:link {
+  color: #ffffff;
+  /* white */
+}
+
+article a:visited {
+  color: #ffffff;
+  /* white */
+}
+
+/* Start Header Styles */
+header {
+  color: #ffffff;
+  position: absolute;
+  background-color: #000000;
+  width: 100%;
+
+}
+
+header h1 {
+  color: #ffffff;
+  /* white */
+  position: absolute;
+  left: 0;
+  padding-left: 2%;
+  padding-bottom: 2%
+}
+
+header nav {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding-top: 1%;
+}
+
+header nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+header nav li {
+  float: left;
+}
+
+header nav li a {
+  display: block;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+header a:link {
+  color: #ffffff;
+  /* white */
+}
+
+header a:visited {
+  color: #ffffff;
+  /* white */
+}
+
+/* Start Footer Styles */
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  padding-left: 2%;
+  width: 100%;
+  background-color: #000000;
+}
+
+footer a:link {
+  color: #ffffff;
+  /* white */
+}
+
+footer a:visited {
+  color: #ffffff;
+  /* white */
+}

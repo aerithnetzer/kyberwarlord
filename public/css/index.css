@@ -1,0 +1,14 @@
+body {
+  background-color: #000000;
+  color: #00ff00;
+}
+
+a:link {
+  color: #add8e6;
+  /* light blue */
+}
+
+a:visited {
+  color: #d8bfd8;
+  /* light purple */
+}
