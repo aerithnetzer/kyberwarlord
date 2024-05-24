@@ -1,32 +1,42 @@
 {{ define "main" }}
-	
+
 <head>
-  <link rel="stylesheet" href="{{ "css/post.css" | relURL }}">
+  <link rel="stylesheet" href="{{ " css/post.css" | relURL }}">
 </head>
 <main>
-		<article>
-			<h1>{{ .Title }}</h1>
-			<time datetime="{{ .Date.Format "2006-01-02T15:04:05" }}">{{ .Date.Format "02.01.2006 15:04" }}</time>
-			<div>
-				{{ .Content }}
-			</div>
-      <div>
-        <a href=/>Back to home</a>
-      </div>
-			{{ with .Params.tags }}
-			<div>
-				<ul id="tags">
-					{{ range . }}
-					<li><a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a></li>
-					{{ end }}
-				</ul>
-			</div>
-			{{ end }}
-			{{ with .Site.DisqusShortname }}
-			<div>
-				{{ template "_internal/disqus.html" . }}
-			</div>
-			{{ end }}
-		</article>
-	</main>
+  <article>
+    <h1>{{ .Title }}</h1>
+    <time datetime="{{ .Date.Format " 2006-01-02T15:04:05" }}">{{ .Date.Format "02.01.2006 15:04" }}</time>
+    <div>
+      {{ .Content }}
+    </div>
+    <div>
+      <a href= />Back to home</a>
+    </div>
+    {{ with .Params.tags }}
+    <div>
+      <ul id="tags">
+        {{ range . }}
+        <li><a href="{{ " /tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a></li>
+        {{ end }}
+      </ul>
+    </div>
+    {{ end }}
+    {{ with .Site.DisqusShortname }}
+    <div>
+      {{ template "_internal/disqus.html" . }}
+    </div>
+    {{ end }}
+  </article>
+</main>
+<footer>
+  {{ if .Params.references }}
+  <h2>References</h2>
+  <ul>
+    {{ range .Params.references }}
+    <li>{{ . }}</li>
+    {{ end }}
+  </ul>  
+    {{ end }}
+</footer>
 {{ end }}
