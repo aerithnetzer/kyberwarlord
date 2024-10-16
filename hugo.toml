@@ -1,5 +1,5 @@
 baseURL = "https://kyberwarlord.com/"
 languageCode = 'en-us'
 title = 'KyberWarlord'
-
-
+[params]
+subtitle = 'Engaging in Asymmetric Information Warfare'
