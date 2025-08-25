@@ -1,0 +1,9 @@
+<!DOCTTYPE html>
+
+{{ $src := "css/main.css" }}
+{{ with resources.Get $src }}
+  {{ $style := . | resources.Minify | resources.Fingerprint }}
+  <link rel="stylesheet" href="{{ $style.RelPermalink }}">
+{{ else }}
+  <link rel="stylesheet" href="/css/main.css">
+{{ end }}

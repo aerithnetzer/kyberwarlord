@@ -1,0 +1,31 @@
+header {
+  h1 {
+    color: #70C247
+  }
+}
+
+body {
+  background-color: #000000;
+
+  time {
+    color: white;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+
+  p {
+    color: white;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding-bottom: 0;
+  }
+
+  h2 {
+    margin-bottom: 0;
+    padding-bottom: 0;
+
+    a {
+      color: white;
+    }
+  }
+}
