@@ -1,7 +1,10 @@
-header {
-  h1 {
-    color: #70C247
-  }
+.site-title {
+  color: #70C247;
+  margin-left: 10%;
+}
+
+.site-title a {
+  color: inherit;
 }
 
 body {
@@ -28,4 +31,32 @@ body {
       color: white;
     }
   }
+}
+
+.article-content {
+  margin-left: 10%;
+  color: white;
+  text-align: justify;
+  margin-right: 10%;
+
+  p {
+
+    text-align: justify;
+    margin-top: 1rem;
+  }
+
+  a {
+    color: #22c55e;
+    text-decoration: underline;
+  }
+
+}
+
+.article-home-list {
+  margin-left: 10%;
+}
+
+.article-title {
+  color: white;
+  margin-left: 10%;
 }
