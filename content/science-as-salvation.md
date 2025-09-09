@@ -1,6 +1,6 @@
 +++
 date = '2025-09-08T18:57:49-04:00'
-draft = true
+draft = false
 title = "Midgley's Science as Salvation"
 +++
 
